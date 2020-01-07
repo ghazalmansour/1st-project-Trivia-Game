@@ -19,8 +19,10 @@ fetch('http://jservice.io/api/random')
                 //console.log(data[0]);
                 const question = data[0].question; 
                 const answer = data[0].answer; 
-                console.log(question + ": " + answer); 
-                //Instead of console logging all the data  I will do const answer and const question. So both of answer and question should be stored in local variables. And then console log the answer and the question together. 
+                     //Instead of console logging all the data  I will do const answer and const question. So both of answer and question should be stored in local variables. And then console log the answer and the question together. 
+                //console.log(question + ": " + answer); 
+                document.getElementById("question").innerHTML = question;
+                document.getElementById("answer").innerHTML = answer;
             });
         }
     )
