@@ -1,31 +1,49 @@
 #container {
     margin: 10px ;
-    padding: 30px;
+    padding: 100px;
     background-color: slategrey;
 }
 body {
-    font-family: 'Asset';
-    font-size: 20px; 
+    font-family: 'Arbutus';
+    font-size: 26px; 
     color: pink;
     text-align: center;
+    position: relative;
+    top: 100px;
     border: 5px solid;
     border-color: slategrey;
-    border-bottom: white;
+   /* border-bottom: white; */
+}
+h1 {
+    position: relative;
+    bottom: 80px;
 }
 button { 
     line-height: 44px;
     border-radius: 2px;
     width: 100%;
     border:none;
-    font-family: 'Aclonica';
+    font-family: 'Arbutus';
     font-size: 24px;
     color: pink;
     background-color: purple;
     text-align: center;
     padding: 10px;
+    position: relative;
+    bottom: 50px;
 }
+
 #question {
     color: ivory;
-    font-family: 'Aclonica';
-
+    font-family: 'Arbutus Slab';
+    font-size: 18px;
+   
+}
+#answer {
+    /*display: none;*/
+    color: purple;    
+    font-family: 'Arbutus Slab';
+    font-size: 20px;
+  
+    
 }
