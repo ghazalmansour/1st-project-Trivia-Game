@@ -9,10 +9,9 @@ body {
     color: pink;
     text-align: center;
     position: relative;
-    top: 100px;
+    top: 130px;
     border: 5px solid;
     border-color: slategrey;
-   /* border-bottom: white; */
 }
 h1 {
     position: relative;
@@ -40,10 +39,10 @@ button {
    
 }
 #answer {
-    /*display: none;*/
+    display: none;
     color: purple;    
     font-family: 'Arbutus Slab';
-    font-size: 20px;
-  
-    
+    font-size: 24px;
+    position: relative;
+    top: 80px;
 }

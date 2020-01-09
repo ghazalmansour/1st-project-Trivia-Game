@@ -3,6 +3,9 @@
 const btnStart = document.getElementById ('btnStart');
 
 btnStart. addEventListener ('click', function(){
+    
+ document.getElementById("answer").innerHTML = "<button id='btnAnswer'>See Answer </button>";
+
 
 //When the button is clicked, it’s contact the Service and get a random clue. So I used  use the fetch method.
 
@@ -22,7 +25,11 @@ fetch('http://jservice.io/api/random')
                      //Instead of console logging all the data  I will do const answer and const question. So both of answer and question should be stored in local variables. And then console log the answer and the question together. 
                 //console.log(question + ": " + answer); 
                 document.getElementById("question").innerHTML = question;
-                document.getElementById("answer").innerHTML = answer;
+               //document.getElementById("answer").innerHTML = answer;
+                document.getElementById("answer").style.display = "block";
+                document.getElementById("btnAnswer").addEventListener('click', function(){
+                    document.getElementById("answer").innerHTML = answer;
+                });
             });
         }
     )
