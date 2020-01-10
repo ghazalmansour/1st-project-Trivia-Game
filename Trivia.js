@@ -37,3 +37,4 @@ fetch('http://jservice.io/api/random')
         console.log('Fetch Error :-S', err);
     });
 });
+        
