@@ -1,9 +1,8 @@
-//The Css, javascript and html don’t know about each other so in the javascript, So I made a connections by using GET ELEMENT BY ID.
-
 const btnStart = document.getElementById ('btnStart');
 
 btnStart. addEventListener ('click', function(){
     
+ //putting the answer button before the fetch method to make the answer button reset every time I click on the question button.
  document.getElementById("answer").innerHTML = "<button id='btnAnswer'>See Answer </button>";
 
 
@@ -22,7 +21,9 @@ fetch('http://jservice.io/api/random')
                 //console.log(data[0]);
                 const question = data[0].question; 
                 const answer = data[0].answer; 
-                     //Instead of console logging all the data  I will do const answer and const question. So both of answer and question should be stored in local variables. And then console log the answer and the question together. 
+
+                //Stored both question and answer in local variables by doing const question and const answer.And then console log the answer and the question together.
+
                 //console.log(question + ": " + answer); 
                 document.getElementById("question").innerHTML = question;
                //document.getElementById("answer").innerHTML = answer;
